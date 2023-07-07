@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/fondo-body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Encabezado */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    background-image: url("/images/fondo-body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    background-image: url("/images/fondo-body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navegación */
+.navegation-home ul {
+    background-color: #07c7f7;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-image: url("/images/fondo-body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navegation-home ul li {
+    margin: 0 10px;
+    transition: transform 0.3s; /* Agregamos una transición al movimiento */
+}
+.navegation-home ul li:hover {
+    transform: translateX(5px); /* Movemos el elemento hacia la derecha al pasar el mouse por encima */
+}
+
+#item-active {
+    background-image: url("/images/fondo-body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border:none;
+
+
+    
+}
+#item-active a {
+    color: azure;
+
+}
+
+#pres-rs {
+    align-items: center;
+    list-style: none;
+}
+
+#pres-rs li {
+    height: 30px;
+    width: 30px;
+    padding-left: 1px;
+}
+
+#presentacion {
+    max-width: 500px;
+    height: 200px;
+    padding: 10px;
+    margin: 0 auto; /* Para centrar horizontalmente */
+    background-color: rgb(181, 219, 241);
+
+    box-shadow: 0 4px 30px rgb(43, 168, 226);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);/* investigar que es*/
+    border: 1px solid rgba(1, 164, 228, 0.2);
+}
+
+.navegation-exp {
+    width: 300px;
+    height: auto;
+}
+
+/* Secciones */
+section {
+    padding: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+section ul li {
+    margin-bottom: 15px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+h4 {
+    color: rgb(10, 0, 207);
+    text-align: center;
+}
+
+#img-perfil {
+    width: 200px;
+    height: 200px;
+}
+
+/* Media queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    #img-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .navegation-home ul li {
+        margin: 0 5px;
+    }
+
+    #presentacion {
+        max-width: 90%;
+        height: auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    #img-perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .navegation-home ul {
+        flex-wrap: wrap;
+    }
+
+    .navegation-home ul li {
+        margin: 5px;
+   
+
+ }
+
+    #presentacion {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+
+
+/* BARRA LATERAL 2*/

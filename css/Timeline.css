@@ -1,0 +1,96 @@
+.title{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    font-size: xx-large;
+    width: 440px;
+    left: 34%;
+    
+
+    box-shadow: 0 4px 30px rgb(43, 168, 226);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);/* investigar que es*/
+    border: 1px solid rgba(1, 164, 228, 0.2);
+}
+body{
+    background: url(/images/fondo-timeline.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#timeline{
+    content: '';
+    position: absolute;
+    background: white;
+    width: 1px;
+    left: 50%;
+
+}
+.child{
+    position: relative;
+    margin: 20px;
+}
+.content{
+    width: 200px;
+    padding: 15px;
+    color: aliceblue;
+    background: rgb(255, 255, 255,0.2);
+}
+/* pares*/
+.child:nth-child(odd){
+    float: left;
+    text-align: left;
+    box-shadow: 0 4px 30px rgb(43, 168, 226);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);/* investigar que es*/
+    border: 1px solid rgba(1, 164, 228, 0.2);
+}
+.child:nth-child(odd)::before{
+    content:'';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+}
+.child:nth-child(odd)::after{
+    content:'';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 2px;
+    left: -10px;
+    top: 10px ;
+}
+/* impares*/
+.child:nth-child(even){
+    float: right;
+    border-radius: 20px, 0px, 20px, 20px;
+    text-align: right;/* alinear texto del lado izquierdo de la linea*/
+    box-shadow: 0 4px 30px darkblue;/*Sombras alrededor */
+    backdrop-filter: blur(8px);/* agregar difuminado*/
+    -webkit-backdrop-filter: blur(8px);/* investigar que es*/
+    border: 1px solid rgba(16, 1, 228, 0.2);
+}
+.child:nth-child(even)::before{
+    content:'';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    right: -30px;
+}
+.child:nth-child(even)::after{
+    content:'';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 2px;
+    right: -10px;
+    top: 10px;
+}
