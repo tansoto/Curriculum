@@ -1,186 +1,249 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url("/images/fondo-body.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    font-family: Arial, sans-serif; /* Establece la fuente del texto en Arial o una fuente sans-serif */
+    margin: 0; /* Elimina los márgenes externos del cuerpo */
+    padding: 0; /* Elimina los rellenos internos del cuerpo */
+    background-image: url("/images/fondo-body4.png"); /* Establece una imagen de fondo para el cuerpo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
+    line-height: 1; /* Establece la altura de línea del texto en 1 */
+
+    /* Center and scale the image nicely */
+    background-position: center;
 }
 
 /* Encabezado */
 header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    background-image: url("/images/fondo-body.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
-footer {
-    background-image: url("/images/fondo-body.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-/* Navegación */
-.navegation-home ul {
-    background-color: #07c7f7;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-image: url("/images/fondo-body.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.navegation-home ul li {
-    margin: 0 10px;
-    transition: transform 0.3s; /* Agregamos una transición al movimiento */
-}
-.navegation-home ul li:hover {
-    transform: translateX(5px); /* Movemos el elemento hacia la derecha al pasar el mouse por encima */
-}
-
-#item-active {
-    background-image: url("/images/fondo-body.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    border:none;
-
-
-    
-}
-#item-active a {
-    color: azure;
-
-}
-
-#pres-rs {
-    align-items: center;
-    list-style: none;
-}
-
-#pres-rs li {
-    height: 30px;
-    width: 30px;
-    padding-left: 1px;
-}
-
-#presentacion {
-    max-width: 500px;
-    height: 200px;
-    padding: 10px;
-    margin: 0 auto; /* Para centrar horizontalmente */
-    background-color: rgb(181, 219, 241);
-
-    box-shadow: 0 4px 30px rgb(43, 168, 226);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);/* investigar que es*/
-    border: 1px solid rgba(1, 164, 228, 0.2);
-}
-
-.navegation-exp {
-    width: 300px;
-    height: auto;
-}
-
-/* Secciones */
-section {
-    padding: 40px;
-}
-
-section h2 {
-    margin-bottom: 20px;
-}
-
-section ul li {
-    margin-bottom: 15px;
+    padding: 20px; /* Agrega un relleno interno de 20px al encabezado */
+    text-align: center; /* Centra el contenido del encabezado */
+    background-image: url("/images/fondo-body4.png"); /* Establece una imagen de fondo para el encabezado */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el encabezado */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
+    background-position: center;
 }
 
 /* Pie de página */
 footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
+    height: 50px;
+    margin-top:50px;
+    background-color: #f2f2f2; /* Establece el color de fondo del pie de página en #f2f2f2 */
+    padding: 20px; /* Agrega un relleno interno de 20px al pie de página */
+    text-align: center; /* Centra el contenido del pie de página */
+
+    background-image: url("/images/fondo-body4.png"); /* Establece una imagen de fondo para el pie de página */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el pie de página */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
+    background-position: center;
 }
 
-h1,
-h2,
-h3 {
-    color: #333;
+/* Navegación */
+.navegation-home ul {
+    background-color: #07c7f7; /* Establece el color de fondo de la lista desordenada dentro de .navegation-home en #07c7f7 */
+    display: flex; /* Hace que los elementos de la lista se muestren en una fila */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    padding: 10px; /* Agrega un relleno interno de 10px a la lista */
+    background-image: url("/images/fondo-body4.png"); /* Establece una imagen de fondo para la lista */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir toda la lista */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
+    background-position: center;
 }
+
+.navegation-home ul li {
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+    margin: 0 10px; /* Establece un margen izquierdo y derecho de 10px para los elementos de la lista */
+    transition: transform 0.3s; /* Agrega una transición de 0.3 segundos al transformar los elementos */
+}
+.navegation-home ul li:hover {
+    transform: translateX(
+        5px
+    ); /* Mueve los elementos hacia la derecha 5px cuando el mouse pasa por encima */
+}
+
+#item-active {
+    background-color: #0373be;
+}
+#item-active a {
+    font-weight: bold;
+    color: rgb(0, 15, 15); /* Establece el color del enlace dentro del elemento con el ID "item-active" en "azure" */
+}
+
+#pres-rs {
+    align-items: center; /* Centra verticalmente los elementos secundarios en el contenedor */
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+}
+
+#pres-rs li {
+    height: 30px; /* Establece la altura de los elementos de lista en 30px */
+    width: 30px; /* Establece el ancho de los elementos de lista en 30px */
+    padding-left: 1px; /* Agrega un relleno izquierdo de 1px a los elementos de lista */
+}
+
+#presentacion {
+    top: 30px;
+    font-family: "Courier New", Courier, monospace; /* Establece la fuente del texto en 'Courier New', Courier o una fuente monoespaciada */
+    max-width: 500px; /* Establece el ancho máximo de #presentacion en 500px */
+    height: 200px; /* Establece la altura de #presentacion en 200px */
+    padding: 10px; /* Agrega un relleno interno de 10px a #presentacion */
+    margin: 0 auto; /* Centra horizontalmente #presentacion dentro de su contenedor */
+    background-color: rgb(1, 40, 114); /* Establece el color de fondo de #presentacion en rgb(181, 219, 241) */
+    line-height: 1; /* Establece la altura de línea del texto en 1 */
+    background-image: url(/images/fondo-presentacion2.1.png); /* Establece una imagen de fondo para #presentacion */
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 30px rgb(16, 156, 221); /* Agrega una sombra alrededor de #presentacion */
+    backdrop-filter: blur(
+        8px
+    ); /* Aplica un efecto de desenfoque de 8px al fondo de #presentacion */
+    -webkit-backdrop-filter: blur(
+        8px
+    ); /* Aplica un efecto de desenfoque de 8px al fondo de #presentacion (para navegadores basados en WebKit) */
+    border: 1px solid rgba(2, 58, 243, 0.486); /* Establece un borde de 1px sólido con transparencia para #presentacion */
+}
+
+.card-title {
+    font-family: Georgia, "Times New Roman", Times, serif; /* Establece la fuente del título de la tarjeta en Georgia, Times New Roman o unafuente serif.
+    font-weight: bold;  /* Establece el peso de la fuente del título de la tarjeta en negrita */
+    color: #0075fa; /* Establece el color del título de la tarjeta en #0075fa */
+}
+
+.navegation-exp {
+    width: 300px; /* Establece el ancho de .navegation-exp en 300px */
+    height: auto; /* Ajusta automáticamente la altura de .navegation-exp según su contenido */
+}
+
+/* Secciones */
+section {
+    padding: 40px; /* Agrega un relleno interno de 40px a las secciones */
+}
+
+section h2 {
+    margin-bottom: 20px; /* Establece un margen inferior de 20px para los elementos h2 dentro de las secciones */
+}
+
+section ul li {
+    margin-bottom: 15px; /* Establece un margen inferior de 15px para los elementos de lista dentro de las secciones */
+}
+
 
 h4 {
-    color: rgb(10, 0, 207);
-    text-align: center;
-}
-
-#img-perfil {
-    width: 200px;
-    height: 200px;
+    color: rgb(
+        10,
+        0,
+        207
+    ); /* Establece el color de los elementos h4 en rgb(10, 0, 207) */
+    text-align: center; /* Centra el texto de los elementos h4 */
 }
 
 /* Media queries para hacerlo responsivo */
 @media (max-width: 768px) {
-    header {
-        padding: 10px;
+    .animated-shadow {
+        width: 100%;
+        height: auto;
+        padding: 10px; /* Agrega un relleno interno de 10px al encabezado en pantallas con un ancho máximo de 768px */
     }
-
-    #img-perfil {
-        width: 150px;
-        height: 150px;
+    .navegation-home{
+        padding-top: 100px;
     }
-
     .navegation-home ul li {
-        margin: 0 5px;
+        margin: 0 5px; /* Establece un margen izquierdo y derecho de 5px para los elementos de la lista en pantallas con un ancho máximo de 768px */
     }
 
     #presentacion {
-        max-width: 90%;
-        height: auto;
+        max-width: 90%; /* Establece el ancho máximo de #presentacion en 90% en pantallas con un ancho máximo de 768px */
+        height: auto; /* Ajusta automáticamente la altura de #presentacion según su contenido en pantallas con un ancho máximo de 768px */
     }
 
     section {
-        padding: 20px;
+        padding: 20px; /* Agrega un relleno interno de 20px a las secciones en pantallas con un ancho máximo de 768px */
     }
 }
 
 @media (max-width: 480px) {
     header {
-        padding: 5px;
+        padding: 5px; /* Agrega un relleno interno de 5px al encabezado en pantallas con un ancho máximo de 480px */
     }
 
     #img-perfil {
-        width: 100px;
-        height: 100px;
+        width: 100px; /* Establece el ancho de #img-perfil en 100px en pantallas con un ancho máximo de 480px */
+        height: 100px; /* Establece la altura de #img-perfil en 100px en pantallas con un ancho máximo de 480px */
     }
 
     .navegation-home ul {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Permite que los elementos de la lista se envuelvan en varias líneas en pantallas con un ancho máximo de 480px */
     }
 
     .navegation-home ul li {
-        margin: 5px;
-   
-
- }
+        margin: 5px; /* Establece un margen de 5px para los elementos de la lista en pantallas con un ancho máximo de 480px */
+    }
 
     #presentacion {
-        max-width: 100%;
-        height: auto;
+        max-width: 100%; /* Establece el ancho máximo de #presentacion en 100% en pantallas con un ancho máximo de 480px */
+        height: auto; /* Ajusta automáticamente la altura de #presentacion según su contenido en pantallas con un ancho máximo de 480px */
     }
 
     section {
-        padding: 10px;
+        padding: 10px; /* Agrega un relleno interno de 10px a las secciones en pantallas con un ancho máximo de 480px */
     }
 }
 
+.fa-brands {
+    color: #005fb8; /* Establece el color de los elementos con la clase .fa-brands en #005fb8 */
+}
 
+/* Efecto titulo */
+.bg-5 {
+    background-image: url(/images/fondo-body4.png); /* Establece una imagen de fondo para los elementos con la clase .bg-5 */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir los elementos */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
+    border: none; /* Elimina el borde de los elementos */
+    background-position: center;
+}
 
-/* BARRA LATERAL 2*/
+.animated-shadow {
+    color: #ffffff; /* Establece el color de los elementos con la clase .animated-shadow en #ffffff */
+    font: normal 80px Varela Round, sans-serif; /* Establece la fuente de los elementos en Varela Round o una fuente sans-serif */
+    height: 80px; /* Establece la altura de los elementos en 80px */
+    left: 0; /* Posiciona los elementos a la izquierda */
+    letter-spacing: 5px; /* Aumenta el espaciado entre las letras en 5px */
+    text-align: center; /* Centra el texto dentro de los elementos */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    width: 100%; /* Establece el ancho de los elementos en 100% */
+    animation: move linear 3000ms infinite; /* Agrega una animación llamada "move" con duración de 2000ms y se repite infinitamente */
+    z-index: 2; /* Establece la posición en el eje Z de los elementos en 2 */
+}
+
+@keyframes move {
+    0% {
+        text-shadow: 4px -4px0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641,
+            1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc,
+            -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
+    }
+    25% {
+        text-shadow: -4px -4px 0 #13f1fc, -3px -3px 0 #13f1fc,
+            -2px -2px 0 #13f1fc, -1px -1px 0 #13f1fc, 4px 4px 0 #da0641,
+            3px 3px 0 #da0641, 2px 2px 0 #da0641, 1px 1px 0 #da0641;
+    }
+    50% {
+        text-shadow: -4px 4px 0 #da0641, -3px 3px 0 #da0641, -2px 2px 0 #da0641,
+            -1px 1px 0 #da0641, 4px -4px 0 #13f1fc, 3px -3px 0 #13f1fc,
+            2px -2px 0 #13f1fc, 1px -1px 0 #13f1fc;
+    }
+    75% {
+        text-shadow: 4px 4px 0 #13f1fc, 3px 3px 0 #13f1fc, 2px 2px 0 #13f1fc,
+            1px 1px 0 #13f1fc, -4px -4px 0 #da0641, -3px -3px 0 #da0641,
+            -2px -2px 0 #da0641, -1px -1px 0 #da0641;
+    }
+    100% {
+        text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641,
+            1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc,
+            -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
+    }
+}
+
+/* BARRA LATERAL 2 */

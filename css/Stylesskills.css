@@ -1,0 +1,65 @@
+body{
+    width: 100%;
+    top: 32px;
+    position: absolute;
+    
+}
+#nav-bar{
+
+        background-image: linear-gradient(to bottom right, rgb(0, 132, 255), rgb(0, 255, 234));
+ 
+}
+#hpro{
+    height: 1300px;
+    border: none;
+    background-image: linear-gradient(rgb(0, 132, 255), rgb(0, 255, 234));
+
+}
+.box-skill{
+    height: 50px;
+    width: 400px;
+    box-shadow: 10px 10px 5px rgb(11, 210, 236);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.box-skill2{
+    height: 50px;
+    width: 300px;
+    box-shadow: 10px 10px 5px rgb(11, 116, 236);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#hper{
+    
+    height: 900px;
+    
+    border: none;
+    background-color: rgb(25, 194, 194);
+    background-image: linear-gradient( rgb(0, 255, 234), rgb(0, 132, 255));
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
+    line-height: 1; /* Establece la altura de línea del texto en 1 */
+}
+
+#cursos h1{
+    color: #323B4C;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    #educacion{
+        margin-top: 100px;
+        padding: 50px;
+    }
+    #cursos{
+        padding: 50px;
+    }
+
+
+}
+.box-skill:hover {
+    transform: translateX(
+        50px
+    ); /* Mueve los elementos hacia la derecha 5px cuando el mouse pasa por encima */
+}

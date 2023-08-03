@@ -14,7 +14,7 @@ const frameworks=[
 {
     ano:"2015-2023",
     empresa:"Independiente",
-    descripcion:"Armado, reparacion e instalacion de software a diferentes equipos equipos"
+    descripcion:"Armado, reparacion e instalacion de software a diferentes equipos"
 },
 {
     ano:"2023",

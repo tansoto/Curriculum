@@ -1,0 +1,83 @@
+body{
+    position: relative;
+    
+}
+#nav-bar{
+
+        background-image: linear-gradient(to bottom right, rgb(0, 132, 255), rgb(0, 255, 234));
+ 
+}
+#educacion{
+    padding: 120px 500px;
+    border: none;
+    background-image: linear-gradient(rgb(0, 132, 255), rgb(0, 255, 234));
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
+    line-height: 1; /* Establece la altura de línea del texto en 1 */
+}
+.card{
+    box-shadow: 10px 10px 5px rgb(11, 210, 236);
+}
+#educacion h1{
+    color: #323B4C;
+    font-weight: bold;
+}
+#educacion h5{
+    padding-left: 10%;
+    border: 1px  #424242;
+    color: #222222;
+}
+#educacion h3{
+    
+    border: 1px  #006A92;
+    color: #006A92;
+}
+#educacion h4{
+    padding-left: 10%;
+    border: 1px  #006A92;
+    color: #013244;
+}
+#educacion p{
+    padding-left: 10%;
+    border: 1px  #737373;
+    color: #3b3b3b;
+}
+
+#cursos{
+    padding: 100px 500px;
+    border: none;
+    background-color: rgb(94, 199, 199);
+    background-image: linear-gradient( rgb(0, 255, 234), rgb(0, 132, 255));
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
+    line-height: 1; /* Establece la altura de línea del texto en 1 */
+}
+
+#cursos h1{
+    color: #323B4C;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    #educacion{
+        margin-top: 100px;
+        padding: 50px;
+    }
+    #cursos{
+        padding: 50px;
+    }
+
+
+}
+@media (max-width: 1400px) {
+    #educacion{
+        margin-top: 100px;
+        padding: 50px;
+    }
+    #cursos{
+        padding: 50px;
+    }
+
+
+}

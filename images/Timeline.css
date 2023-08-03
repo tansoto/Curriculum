@@ -1,0 +1,186 @@
+.title {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(5, 204, 204);
+    text-align: center;
+    font-size: xx-large;
+    width: 440px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 30px rgb(43, 168, 226);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(1, 182, 253, 0.2);
+  }
+#nav-bar{
+  align-items: center;
+}
+  body {
+    background: url(/images/fondo-timeline3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #timeline {
+    content: '';
+    position: absolute;
+    background: white;
+    width: 1px;
+    left: 50%;
+  }
+  
+  .child {
+    position: relative;
+    margin: 20px;
+  }
+  
+  .content {
+    width: 200px;
+    padding: 15px;
+    color: rgb(6, 102, 187);
+    background: rgb(255, 255, 255, 0.2);
+  }
+  
+  .child:nth-child(odd) {
+    float: left;
+    text-align: left;
+    box-shadow: 0 4px 30px rgb(43, 168, 226);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(1, 164, 228, 0.2);
+  }
+  
+  .child:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+  }
+  
+  .child:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 2px;
+    left: -10px;
+    top: 10px;
+  }
+  
+  .child:nth-child(even) {
+    float: right;
+    border-radius: 20px, 0px, 20px, 20px;
+    text-align: right;
+    box-shadow: 0 4px 30px rgb(3, 114, 218);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(16, 1, 228, 0.2);
+  }
+  
+  .child:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    right: -30px;
+  }
+  
+  .child:nth-child(even)::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 2px;
+    right: -10px;
+    top: 10px;
+  }
+  
+  /* Media queries para hacer el diseño responsive */
+  
+  @media (max-width: 768px) {
+    #timeline{
+      margin-top: 80px;
+    }
+  
+    .child {
+      position: relative;
+      margin: 20px;
+    }
+    
+    .content {
+      width: 180px;
+      padding: 15px;
+      color: rgb(6, 102, 187);
+      background: rgb(255, 255, 255, 0.2);
+    }
+    
+    .child:nth-child(odd) {
+      float: left;
+      text-align: left;
+      box-shadow: 0 4px 30px rgb(43, 168, 226);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(1, 164, 228, 0.2);
+    }
+    
+    .child:nth-child(odd)::before {
+      content: '';
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      left: -30px;
+    }
+    
+    .child:nth-child(odd)::after {
+      content: '';
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      width: 10px;
+      height: 2px;
+      left: -10px;
+      top: 10px;
+    }
+    
+    .child:nth-child(even) {
+      float: right;
+      border-radius: 20px, 0px, 20px, 20px;
+      text-align: right;
+      box-shadow: 0 4px 30px rgb(3, 114, 218);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(16, 1, 228, 0.2);
+    }
+    
+    .child:nth-child(even)::before {
+      content: '';
+      position: absolute;
+      background: rgb(192, 7, 7);
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      right: -30px;
+    }
+    
+    .child:nth-child(even)::after {
+      content: '';
+      position: absolute;
+      background: rgb(124, 8, 8);
+      border-radius: 50%;
+      width: 10px;
+      height: 2px;
+      right: -10px;
+      top: 10px;
+    }
+  }
+  
