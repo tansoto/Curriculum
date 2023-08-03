@@ -59,9 +59,10 @@ footer {
     transition: transform 0.3s; /* Agrega una transición de 0.3 segundos al transformar los elementos */
 }
 .navegation-home ul li:hover {
-    transform: translateX(
-        5px
+    transform: translatey(
+        -5px
     ); /* Mueve los elementos hacia la derecha 5px cuando el mouse pasa por encima */
+   
 }
 
 #item-active {
