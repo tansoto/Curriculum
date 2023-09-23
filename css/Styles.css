@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif; /* Establece la fuente del texto en Arial o una fuente sans-serif */
     margin: 0; /* Elimina los márgenes externos del cuerpo */
     padding: 0; /* Elimina los rellenos internos del cuerpo */
-    background-image: url("/images/fondo-body4.png"); /* Establece una imagen de fondo para el cuerpo */
+    background-image: url("/images/fondo-white.jpg"); /* Establece una imagen de fondo para el cuerpo */
     background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
     background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo */
     background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
@@ -11,13 +11,16 @@ body {
     /* Center and scale the image nicely */
     background-position: center;
 }
-
+#saludo{
+    font-size: x-large;
+    font-family: monospace;
+}
 /* Encabezado */
 header {
 
     padding: 20px; /* Agrega un relleno interno de 20px al encabezado */
     text-align: center; /* Centra el contenido del encabezado */
-    background-image: url("/images/fondo-body4.png"); /* Establece una imagen de fondo para el encabezado */
+    background-image: url("/images/fondo-white.jpg"); /* Establece una imagen de fondo para el encabezado */
     background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
     background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el encabezado */
     background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
@@ -32,7 +35,7 @@ footer {
     padding: 20px; /* Agrega un relleno interno de 20px al pie de página */
     text-align: center; /* Centra el contenido del pie de página */
 
-    background-image: url("/images/fondo-body4.png"); /* Establece una imagen de fondo para el pie de página */
+    background-image: url("/images/fondo-white.jpg"); /* Establece una imagen de fondo para el pie de página */
     background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
     background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el pie de página */
     background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
@@ -45,7 +48,7 @@ footer {
     display: flex; /* Hace que los elementos de la lista se muestren en una fila */
     justify-content: center; /* Centra los elementos de la lista horizontalmente */
     padding: 10px; /* Agrega un relleno interno de 10px a la lista */
-    background-image: url("/images/fondo-body4.png"); /* Establece una imagen de fondo para la lista */
+    background-image: url("/images/fondo-white.jpg"); /* Establece una imagen de fondo para la lista */
     background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
     background-size: cover; /* Ajusta la imagen de fondo para cubrir toda la lista */
     background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
@@ -53,26 +56,46 @@ footer {
 }
 
 .navegation-home ul li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     backdrop-filter: blur(20px);
     margin: 0 10px; /* Establece un margen izquierdo y derecho de 10px para los elementos de la lista */
-    transition: transform 0.3s; /* Agrega una transición de 0.3 segundos al transformar los elementos */
+ 
+    /*Para la animacion del inicio*/
+    animation: aparicion-botones;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 .navegation-home ul li:hover {
     transform: translatey(
         -5px
     ); /* Mueve los elementos hacia la derecha 5px cuando el mouse pasa por encima */
-   
+    
+}
+#item-inactive:hover{
+    background-image: linear-gradient(to bottom right, rgb(0, 255, 234), rgb(0, 132, 255)); 
 }
 
 #item-active {
+    
+    border-radius: 15px;
     background-color: #0373be;
 }
 #item-active a {
     font-weight: bold;
     color: rgb(0, 15, 15); /* Establece el color del enlace dentro del elemento con el ID "item-active" en "azure" */
 }
-
+#item-inactive{
+    background-image: linear-gradient(to bottom right, rgb(0, 132, 255), rgb(0, 255, 234));
+    border-radius: 15px;
+   
+}
+#item-inactive a{
+   color: white;
+   
+}
 #pres-rs {
     align-items: center; /* Centra verticalmente los elementos secundarios en el contenedor */
     list-style: none; /* Elimina los estilos de lista predeterminados */
@@ -85,8 +108,11 @@ footer {
 }
 
 #presentacion {
+    border-radius: 15px;
     top: 30px;
-    font-family: "Courier New", Courier, monospace; /* Establece la fuente del texto en 'Courier New', Courier o una fuente monoespaciada */
+    font-size:  large;
+    text-align: justify;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Establece la fuente del texto en 'Courier New', Courier o una fuente monoespaciada */
     max-width: 500px; /* Establece el ancho máximo de #presentacion en 500px */
     height: 200px; /* Establece la altura de #presentacion en 200px */
     padding: 10px; /* Agrega un relleno interno de 10px a #presentacion */
@@ -104,14 +130,28 @@ footer {
         8px
     ); /* Aplica un efecto de desenfoque de 8px al fondo de #presentacion (para navegadores basados en WebKit) */
     border: 1px solid rgba(2, 58, 243, 0.486); /* Establece un borde de 1px sólido con transparencia para #presentacion */
-}
 
+}
+#presentacion:hover{
+    transform: scale(1.2);
+    transform: rotate(3deg);
+}
 .card-title {
-    font-family: Georgia, "Times New Roman", Times, serif; /* Establece la fuente del título de la tarjeta en Georgia, Times New Roman o unafuente serif.
+    font-family: "Courier New", Courier, monospace; /* Establece la fuente del título de la tarjeta en Georgia, Times New Roman o unafuente serif.*/
     font-weight: bold;  /* Establece el peso de la fuente del título de la tarjeta en negrita */
-    color: #0075fa; /* Establece el color del título de la tarjeta en #0075fa */
+    color: #ffffff; /* Establece el color del título de la tarjeta en #0075fa */
 }
-
+.card-text{
+        /*Para la animacion del inicio*/
+        animation: aparicion;
+        opacity: 0;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+}
+.pies{
+    color: white;
+}
 .navegation-exp {
     width: 300px; /* Establece el ancho de .navegation-exp en 300px */
     height: auto; /* Ajusta automáticamente la altura de .navegation-exp según su contenido */
@@ -142,14 +182,15 @@ h4 {
 
 /* Media queries para hacerlo responsivo */
 @media (max-width: 768px) {
+    .animated-name {
+        font-size: .1rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
     .animated-shadow {
         width: 100%;
         height: auto;
         padding: 10px; /* Agrega un relleno interno de 10px al encabezado en pantallas con un ancho máximo de 768px */
     }
-    .navegation-home{
-        padding-top: 100px;
-    }
+
     .navegation-home ul li {
         margin: 0 5px; /* Establece un margen izquierdo y derecho de 5px para los elementos de la lista en pantallas con un ancho máximo de 768px */
     }
@@ -165,6 +206,10 @@ h4 {
 }
 
 @media (max-width: 480px) {
+    
+    .animated-name {
+        font-size: .1rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
     header {
         padding: 5px; /* Agrega un relleno interno de 5px al encabezado en pantallas con un ancho máximo de 480px */
     }
@@ -193,58 +238,73 @@ h4 {
 }
 
 .fa-brands {
-    color: #005fb8; /* Establece el color de los elementos con la clase .fa-brands en #005fb8 */
+    color: #ebedee; /* Establece el color de los elementos con la clase .fa-brands en #005fb8 */
 }
 
 /* Efecto titulo */
 .bg-5 {
-    background-image: url(/images/fondo-body4.png); /* Establece una imagen de fondo para los elementos con la clase .bg-5 */
+    background-image: url(/images/fondo-white.jpg); /* Establece una imagen de fondo para los elementos con la clase .bg-5 */
     background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
     background-size: cover; /* Ajusta la imagen de fondo para cubrir los elementos */
     background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace al desplazarse */
     border: none; /* Elimina el borde de los elementos */
     background-position: center;
+    
 }
 
-.animated-shadow {
-    color: #ffffff; /* Establece el color de los elementos con la clase .animated-shadow en #ffffff */
-    font: normal 80px Varela Round, sans-serif; /* Establece la fuente de los elementos en Varela Round o una fuente sans-serif */
-    height: 80px; /* Establece la altura de los elementos en 80px */
-    left: 0; /* Posiciona los elementos a la izquierda */
-    letter-spacing: 5px; /* Aumenta el espaciado entre las letras en 5px */
-    text-align: center; /* Centra el texto dentro de los elementos */
-    text-transform: uppercase; /* Transforma el texto a mayúsculas */
-    width: 100%; /* Establece el ancho de los elementos en 100% */
-    animation: move linear 3000ms infinite; /* Agrega una animación llamada "move" con duración de 2000ms y se repite infinitamente */
-    z-index: 2; /* Establece la posición en el eje Z de los elementos en 2 */
+.animated-name {
+    font-size: .1rem;
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 153, 255);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .115em;
+    font-size: 4rem;
+    background: linear-gradient(135deg, #1abc9c, #03a9f4); /* Gradiente de colores */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation:
+        typing 3.5s steps(30, end) infinite,
+        blink-caret .5s step-end infinite;
 }
 
-@keyframes move {
-    0% {
-        text-shadow: 4px -4px0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641,
-            1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc,
-            -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
-    }
-    25% {
-        text-shadow: -4px -4px 0 #13f1fc, -3px -3px 0 #13f1fc,
-            -2px -2px 0 #13f1fc, -1px -1px 0 #13f1fc, 4px 4px 0 #da0641,
-            3px 3px 0 #da0641, 2px 2px 0 #da0641, 1px 1px 0 #da0641;
-    }
-    50% {
-        text-shadow: -4px 4px 0 #da0641, -3px 3px 0 #da0641, -2px 2px 0 #da0641,
-            -1px 1px 0 #da0641, 4px -4px 0 #13f1fc, 3px -3px 0 #13f1fc,
-            2px -2px 0 #13f1fc, 1px -1px 0 #13f1fc;
-    }
-    75% {
-        text-shadow: 4px 4px 0 #13f1fc, 3px 3px 0 #13f1fc, 2px 2px 0 #13f1fc,
-            1px 1px 0 #13f1fc, -4px -4px 0 #da0641, -3px -3px 0 #da0641,
-            -2px -2px 0 #da0641, -1px -1px 0 #da0641;
-    }
-    100% {
-        text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641,
-            1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc,
-            -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
-    }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
 }
 
-/* BARRA LATERAL 2 */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 110, 255); }
+}
+
+  
+
+
+/* animaciones aparicion inicio */
+@keyframes aparicion {
+    0%{
+        opacity: 0;
+        transform: scale(2) translatey(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes aparicion-botones {
+    0%{
+        opacity: 0;
+        transform: scale(1) translatex(-100px);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+}

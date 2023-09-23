@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background-color: #55a4a9; /* Color turquesa */
+  }
+  
+  .event {
+    position: relative;
+    margin: 20px 0;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(20px); /* Desplazado hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .event.visible {
+    opacity: 1; /* Visible al hacer scroll */
+    transform: translateY(0);
+  }
+  
+  .event::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: #55a4a9; /* Color turquesa */
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .event-content {
+    margin-left: 30px;
+    padding: 10px;
+    border-left: 2px solid #55a4a9; /* Color turquesa */
+    background-color: #e0f4f4; /* Color de fondo más claro */
+  }
+  
+  .event-date {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .event-title {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #55a4a9; /* Color turquesa */
+  }
+  
+  .event-description {
+    text-align: justify;
+    color: #666;
+  }
+  * Estilos para la barra de navegación */
+.navbar {
+  background-color: #17a2b8; /* Cambia este valor a tu color turquesa preferido */
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+#navbar.navbar {
+   
+  
+    background-color: #17a2b8; /* Cambia este valor a tu color turquesa preferido */
+    }
+    .navbar-nav li.nav-item {
+      list-style: none; /* Elimina los puntos de la lista */
+   }
+  
+  /* Estilos para quitar los puntos de la lista en la barra de navegación */
+  .nav-bar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  
